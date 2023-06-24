@@ -69,10 +69,10 @@
                 />
 
             <TextView
-                android:id="@+id/tvPercent"
+                android:id="@+id/tvOpenBracket"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="%"
+                android:text="("
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -80,6 +80,20 @@
                 android:layout_weight="1"
                 android:background="@drawable/oval_shape"
                 />
+
+            <TextView
+                android:id="@+id/tvCloseBracket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=")"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/oval_shape"
+                />
+
             <TextView
                 android:id="@+id/tvBackspace"
                 android:layout_width="0dp"
@@ -92,18 +106,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/oval_shape"
                 />
-            <TextView
-                android:id="@+id/tvDivide"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:text="/"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/oval_shape"
-                />
+
 
 
         </LinearLayout>
@@ -152,11 +155,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/oval_shape"
                 />
+
             <TextView
-                android:id="@+id/tvMultiply"
+                android:id="@+id/tvDivide"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="*"
+                android:text="/"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -164,6 +168,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/oval_shape"
                 />
+
 
 
         </LinearLayout>
@@ -212,11 +217,12 @@
             android:layout_weight="1"
             android:background="@drawable/oval_shape"
             />
+
         <TextView
-            android:id="@+id/tvSubtract"
+            android:id="@+id/tvMultiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="-"
+            android:text="*"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -224,6 +230,7 @@
             android:layout_weight="1"
             android:background="@drawable/oval_shape"
             />
+
 
 
     </LinearLayout>
@@ -272,18 +279,20 @@
             android:layout_weight="1"
             android:background="@drawable/oval_shape"
             />
-        <TextView
-            android:id="@+id/tvAddition"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="+"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/oval_shape"
-            />
+
+            <TextView
+                android:id="@+id/tvSubtract"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/oval_shape"
+                />
+
 
 
     </LinearLayout>
@@ -294,19 +303,6 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-
-        <TextView
-            android:id="@+id/tv00"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="00"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/oval_shape"
-            />
 
         <TextView
             android:id="@+id/tv0"
@@ -344,6 +340,19 @@
             android:layout_weight="1"
             android:background="@drawable/oval_shape"
             />
+
+            <TextView
+                android:id="@+id/tvAddition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/oval_shape"
+                />
 
 
     </LinearLayout>

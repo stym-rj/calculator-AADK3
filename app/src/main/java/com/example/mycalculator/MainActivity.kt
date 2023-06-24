@@ -149,25 +149,25 @@ class MainActivity : AppCompatActivity() {
 
         val buttons = listOf(
             binding.tvAC,
-            binding.tvPercent,
+            binding.tvOpenBracket,
+            binding.tvCloseBracket,
             binding.tvBackspace,
-            binding.tvDivide,
             binding.tv7,
             binding.tv8,
             binding.tv9,
-            binding.tvMultiply,
+            binding.tvDivide,
             binding.tv4,
             binding.tv5,
             binding.tv6,
-            binding.tvSubtract,
+            binding.tvMultiply,
             binding.tv1,
             binding.tv2,
             binding.tv3,
-            binding.tvAddition,
-            binding.tv00,
+            binding.tvSubtract,
             binding.tv0,
             binding.tvDot,
             binding.tvEquals,
+            binding.tvAddition,
         )
 
         buttons.forEach {
@@ -221,16 +221,14 @@ class MainActivity : AppCompatActivity() {
                                                         id.id != R.id.tvAddition &&
                                                         id.id != R.id.tvSubtract &&
                                                         id.id != R.id.tvMultiply &&
-                                                        id.id != R.id.tvDivide &&
-                                                        id.id != R.id.tvPercent) {
+                                                        id.id != R.id.tvDivide ) {
                                                     display.text = id.text.toString()
                                                 } else if ( (display.text == "ERROR" ||
                                                             display.text.toString() == "") &&
                                                             (id.id == R.id.tvAddition ||
                                                             id.id == R.id.tvSubtract ||
                                                             id.id == R.id.tvMultiply ||
-                                                            id.id == R.id.tvDivide ||
-                                                            id.id == R.id.tvPercent)) {
+                                                            id.id == R.id.tvDivide )) {
                                                     display.text = ""
                                                 } else if (display.text.toString() == "") {
                                                      display.text = id.text.toString()
