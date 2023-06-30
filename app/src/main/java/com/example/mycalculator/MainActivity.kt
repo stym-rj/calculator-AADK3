@@ -180,8 +180,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun click(id: TextView, display: TextView, motionEvent: MotionEvent) {
         when (motionEvent.action) {
-            MotionEvent.ACTION_DOWN -> {
-                id.setBackgroundResource(R.drawable.inverted_oval_shape)
+            MotionEvent.ACTION_UP -> {
+                id.setBackgroundResource(R.drawable.oval_shape)
 
                 when(id.id) {
                     R.id.tvAC ->            display.text = ""
@@ -240,8 +240,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            MotionEvent.ACTION_UP -> {
-                id.setBackgroundResource(R.drawable.oval_shape)
+            MotionEvent.ACTION_DOWN -> {
+                id.setBackgroundResource(R.drawable.inverted_oval_shape)
             }
         }
     }
